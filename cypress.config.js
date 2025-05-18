@@ -5,7 +5,16 @@ module.exports = defineConfig({
         retries: 1,
         baseUrl: "http://localhost:3000",
         setupNodeEvents(on, config) {
-            // implement node event listeners here
+            const viewportType = config.env.viewport;
+            if (viewportType === "laptop") {
+                config.viewportHeight = 900;
+                config.viewportWidth = 1440;
+            }
+            if (viewportType === "mobile") {
+                config.viewportHeight = 667;
+                config.viewportWidth = 375;
+            }
+            return config;
         }
     }
 });

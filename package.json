@@ -3,7 +3,14 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test_laptop_chrome_headed": "cypress run --env viewport=laptop --browser chrome --headed",
+        "test_mobile_chrome_headed": "cypress run --env viewport=mobile --browser chrome --headed",
+        "test_laptop_chrome_headless": "cypress run --env viewport=laptop --browser chrome --headless",
+        "test_mobile_chrome_headless": "cypress run --env viewport=mobile --browser chrome --headless",
+        "test_laptop_firefox_headed": "cypress run --env viewport=laptop --browser firefox --headed",
+        "test_mobile_firefox_headed": "cypress run --env viewport=mobile --browser firefox --headed",
+        "test_laptop_firefox_headless": "cypress run --env viewport=laptop --browser firefox --headless",
+        "test_mobile_firefox_headless": "cypress run --env viewport=mobile --browser firefox --headless"
     },
     "keywords": [],
     "author": "",
