@@ -41,7 +41,6 @@ describe("Собственные тесты", () => {
 });
 
 describe("Тесты с лекции", () => {
-    beforeEach;
     it("Валидный логин", () => {
         cy.visit("/");
         cy.login(validLogin, validPassword);
